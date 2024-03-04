@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import icon from "@/public/favicon.png";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
           {/* <HeaderSideNav /> */}
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
